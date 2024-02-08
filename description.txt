@@ -1,0 +1,6 @@
+name: Ilie Zloi
+sex: M
+year: 2002
+month: 08
+day: 02
+
