@@ -1,5 +1,5 @@
 {
-  "name": "lab2",
+  "name": "projectNice",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.4",
+    "antd": "^5.15.3",
+    "immer": "^10.0.4",
     "mobx": "^6.12.0",
     "mobx-react": "^9.1.0",
     "mobx-state-tree": "^5.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
