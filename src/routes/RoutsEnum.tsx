@@ -3,6 +3,7 @@ import {
 } from "@ant-design/icons"
 import MainPage from "../components/MainPage.tsx";
 import Products from "../components/Products.tsx";
+import Form from "../components/FormCustom.tsx";
 
 
 export enum PathEnum {
@@ -30,6 +31,14 @@ const RoutesCustom = [{
     exact: true,
     hideLink: false
 
+}, {
+    id: '3',
+    path: PathEnum.Form,
+    icon: <FormOutlined />,
+    title: 'Form',
+    element: <Form />,
+    exact: true,
+    hideLink: false
 }]
 
 
