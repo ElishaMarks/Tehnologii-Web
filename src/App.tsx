@@ -1,23 +1,28 @@
+import React from 'react';
+import SidebarCustom from './layouts/SidebarCustom';
+import ContentCustom from './layouts/ContentCustom';
+import HeaderCustom from './layouts/HeaderCustom';
+import FooterCustom from './layouts/FooterCustom';
+import { Layout } from 'antd';
 
-import './App.css'
 
-function App() {
+const App: React.FC = () =>{
+    return (
+        <Layout hasSider>
 
+            <SidebarCustom></SidebarCustom>
 
-  return (
-      <>
+            <Layout style={{ marginLeft: 200 }}>
 
-          <h1>
-              name: Ilie Zloi
-          <pre>sex: M</pre>
-          <pre>year: 2002</pre>
-          <pre> month: 08 </pre>
-          <pre>day: 02</pre>
-          <pre>Group: CR-222</pre>
-          <pre>sex: M</pre>
-          </h1>
-      </>
-  )
-}
+                <HeaderCustom></HeaderCustom>
 
-export default App
+                <ContentCustom>
+                </ContentCustom>
+
+                <FooterCustom></FooterCustom>
+            </Layout>
+        </Layout>
+    );
+};
+
+export default App;
