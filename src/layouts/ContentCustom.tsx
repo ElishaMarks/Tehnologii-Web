@@ -4,9 +4,7 @@ import {Outlet} from "react-router-dom";
 
 const {Content } = Layout
 
-export interface IProduct{
-    id: number;
-    title: string;
+interface Product{
     description: string;
     price: number;
     discountPercentage: number;
@@ -15,7 +13,11 @@ export interface IProduct{
     brand: string;
     category: string;
     thumbnail: string;
-    images: string[] ;
+    images: string[];
+}
+export interface IProduct extends Product{
+    id: number;
+    title: string;
 }
 
 
