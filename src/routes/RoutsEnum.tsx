@@ -35,7 +35,7 @@ const RoutesCustom = [{
     id: '3',
     path: PathEnum.Form,
     icon: <FormOutlined />,
-    title: 'Form',
+    title: 'Login',
     element: <Form />,
     exact: true,
     hideLink: false
