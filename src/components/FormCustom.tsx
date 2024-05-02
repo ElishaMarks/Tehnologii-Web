@@ -87,7 +87,7 @@ const FormCustom: React.FC = () => {
     }
 
     const handleUpdate = (values: FieldType) => {
-        const editedFormDataCount = formDataCount - 1;
+        const editedFormDataCount = formDataCount;
         if (editedFormDataCount >= 0) {
             const formDataId = `formData${editedFormDataCount}`;
             localStorage.setItem(formDataId, JSON.stringify(values));
